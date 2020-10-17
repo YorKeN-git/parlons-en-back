@@ -17,4 +17,5 @@ public class Conference {
 	private String urlImg;
 	private String createur;
 	
+	
 }
