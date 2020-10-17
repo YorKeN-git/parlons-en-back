@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.parlonsEn.models.Utilisateur;
 import com.parlonsEn.repositories.utilisateurRepository;
+import com.parlonsEn.services.utilisateurService;
 
 @CrossOrigin
 @RestController
@@ -19,6 +20,7 @@ public class utilisateurController {
 
 	@Autowired
 	private utilisateurRepository repository;
+	private utilisateurService service;
 	
 	@PostMapping("")
 	public Utilisateur save(@RequestBody Utilisateur entity) {
